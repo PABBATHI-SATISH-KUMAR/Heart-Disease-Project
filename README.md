@@ -1,39 +1,110 @@
-### Heart Disease Prediction Using Machine Learning: A Logistic Regression Approach
+🫀 Heart Disease Prediction using Logistic Regression
+📌 Overview
 
-#### Abstract
-Heart disease is a leading cause of mortality worldwide, and early prediction can significantly improve patient outcomes. This paper outlines the development of a machine learning model using logistic regression to predict heart disease based on clinical data. The model is trained and validated using a publicly available dataset. A user-friendly web interface is implemented to facilitate real-time predictions and result storage. The effectiveness of the model is evaluated using accuracy metrics, highlighting its potential application in healthcare.
+This project predicts the likelihood of heart disease in a person based on clinical parameters using Logistic Regression.
+A Flask-based web application has been developed to make predictions interactively, and the project is hosted online using Render.
 
-#### Introduction
-Heart disease remains a critical health challenge globally, with timely diagnosis being crucial for effective treatment. Machine learning offers promising tools to predict heart disease risk, enabling proactive medical interventions. This study focuses on building a logistic regression model to estimate the likelihood of heart disease, leveraging various clinical attributes.
+🚀 Features
 
-#### Methodology
+✅ Machine Learning model: Logistic Regression
 
-**1. Data Collection and Preprocessing**
-The dataset used for this project is sourced from the UCI Machine Learning Repository, containing 303 instances with 14 attributes, including age, sex, cholesterol levels, and blood pressure. The target variable indicates the presence of heart disease.
+✅ User-friendly Flask Web App
 
-- **Data Loading:** The dataset is loaded using pandas.
-- **Data Cleaning:** Missing values are handled, and non-predictive columns are removed.
-- **Feature Selection:** Relevant features are selected based on domain knowledge.
+✅ Interactive UI for inputting patient data
 
-**2. Model Development**
-Logistic regression, a robust machine learning algorithm for binary classification, is employed.
+✅ Deployed and accessible online (Render Hosting)
 
-- **Data Splitting:** The dataset is divided into training (80%) and testing (20%) sets using stratified sampling to maintain class distribution.
-- **Model Training:** The logistic regression model is trained with a maximum iteration limit set to 1000.
-- **Evaluation Metrics:** Model performance is evaluated using accuracy, with additional metrics like the confusion matrix for deeper insights.
+✅ Explainability using SHAP and LIME visualizations
 
-**3. User Interaction and Real-time Prediction**
-A web interface is developed using Flask to enable user interaction.
+🏗️ Project Structure
+Heart-Disease-Project
+│── app.py               # Flask main application  
+│── heart.csv            # Dataset (Cleveland Heart Disease Dataset)  
+│── /static              # CSS, JS, and visualization files  
+│   ├── css/  
+│   ├── js/  
+│   ├── shap/  
+│   └── lime/  
+│── /templates  
+│   └── index.html       # Frontend UI  
+│── requirements.txt     # Dependencies  
+│── README.md            # Documentation  
 
-- **Input Features:** Users input clinical data through a web form.
-- **Real-time Prediction:** The trained model predicts the likelihood of heart disease based on user input.
-- **Result Storage:** Predictions are stored in an SQLite database for future reference.
+⚙️ Tech Stack
 
-#### Results
-The logistic regression model achieved an accuracy of approximately 85% on the training data and 82% on the testing data. The web interface effectively captures user input and provides real-time predictions, enhancing accessibility for non-technical users.
+Programming Language: Python 🐍
 
-#### Discussion
-The results demonstrate the feasibility of using logistic regression for heart disease prediction. The relatively high accuracy indicates the model's potential utility in clinical settings. The web interface and database integration ensure that the system is user-friendly and capable of storing historical predictions for trend analysis.
+Framework: Flask
 
-#### Conclusion
-This study presents a comprehensive approach to predicting heart disease using machine learning. The logistic regression model, combined with a user-friendly web interface, provides an effective tool for early diagnosis and intervention. Future work will explore incorporating more advanced machine learning techniques and larger datasets to further enhance prediction accuracy.
+Machine Learning: Scikit-learn (Logistic Regression)
+
+Frontend: HTML, CSS, JavaScript
+
+Visualization: SHAP, LIME
+
+Deployment: Render
+
+📊 Dataset
+
+The project uses the Cleveland Heart Disease Dataset, which contains medical attributes such as:
+
+Age, Sex, Chest Pain Type, Resting Blood Pressure, Cholesterol, Fasting Blood Sugar, Resting ECG, Max Heart Rate, Exercise-Induced Angina, ST Depression, Slope, Major Vessels, Thalassemia.
+
+Target: Presence (1) or absence (0) of heart disease.
+
+🔮 Model Details
+
+Algorithm: Logistic Regression
+
+Why Logistic Regression?
+
+Handles binary classification problems effectively.
+
+Provides interpretable coefficients for medical insights.
+
+Works well with this dataset with good accuracy.
+
+🌐 Live Demo
+
+👉 Click here to try the app on Render - https://heart-disease-project-6xdv.onrender.com
+
+⚡ Installation & Usage (Local Setup)
+
+Clone the repository
+
+git clone https://github.com/your-username/Heart-Disease-Project.git
+cd Heart-Disease-Project
+
+
+Create a virtual environment & activate
+
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+
+Install dependencies
+
+pip install -r requirements.txt
+
+
+Run the app
+
+python app.py
+
+
+Open your browser at http://127.0.0.1:5000/
+
+👨‍💻 Author
+
+Pabbathi Satish Kumar
+
+📧 Email: pabbathisatishkumar@gmail.com
+
+💼 LinkedIn - https://www.linkedin.com/in/pabbathisatishkumar/
+
+🐙 GitHub - https://github.com/PABBATHI-SATISH-KUMAR
+
+⭐ Contribute
+
+Feel free to fork this repo, raise issues, or submit pull requests to improve the project!
