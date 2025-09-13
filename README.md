@@ -46,7 +46,7 @@ Deployment: Render
 
 📊 Dataset
 
-The project uses the Cleveland Heart Disease Dataset, which contains medical attributes such as:
+The project uses the  Heart Disease Dataset, which contains medical attributes such as:
 
 Age, Sex, Chest Pain Type, Resting Blood Pressure, Cholesterol, Fasting Blood Sugar, Resting ECG, Max Heart Rate, Exercise-Induced Angina, ST Depression, Slope, Major Vessels, Thalassemia.
 
